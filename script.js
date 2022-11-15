@@ -60,20 +60,27 @@ const slides = document.getElementsByClassName("testimony-review");
             }
             slides[slidePosition].classList.add("testimony-review-visible");
         };
+let header = document.querySelector("header")
 
-
+// Navbar 
         const hamburger = document.querySelector(".hamburger");
         const navList = document.querySelector(".nav-list");
 
         hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active"); 
     navList.classList.toggle("active");
+    header.style.backgroundColor = "#000"
     
 })
+function changeColor(){
+  header.style.backgroundColor = "#2e2e41";
+ } 
 
     document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+      header.style.backgroundColor = "#2e2e41";
         hamburger.classList.remove("active");
         navList.classList.remove("active");
+        
     }));
 
     document.getElementById("load-more-btn").addEventListener("click", () => {
@@ -84,58 +91,18 @@ const slides = document.getElementsByClassName("testimony-review");
       document.getElementById("more-projects").style.display = "none";
     })
     
-    //window.onscroll = function () {
-      //  navList.remove();
-   // };
-
-  //function lockScroll() {
-    //document.body.classList.toggle('lock-scroll');
-//}
-
-//window.onscroll = function() {scrollFunction()};
+   
 
 
 
 
 let body = document.getElementsByTagName("body");
 
-//function stopscrolling() {
-  //if (hamburger.classList.toggle === "active") {
-   // window.onscroll = () => { body.scroll(0, 0); };
- // } else {
-   // window.scrollY;
-  //}
 
-  //}
-
-
-
-//stopscrolling();
-
-//function print () {
-  //if(navList === "active")
- //{
-  //console.log("something something")
- //}else {
-  //console.log("nothing nothing")
- //}}
-
- //print();
 
 
  
 
-//function printnit () {
- // var myElement = document.getElementById('trying');
-//if(myElement === document.activeElement){
 
-  //console.log("nit nit nit")
-    //myElement Has Focus
-//} else {
-  //console.log('notingggg')
-//}
-
-//}
-//printnit();
 
 

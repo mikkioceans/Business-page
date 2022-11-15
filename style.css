@@ -508,7 +508,7 @@ footer {
         position: fixed;
         right: -100%;
         top: 0;
-        width: 99%;
+        width: 100%;
         background-color: black;
         opacity: 0.9;
         gap: 0;
@@ -602,6 +602,7 @@ footer {
       .testimonial-h3 {
         font-size: 21px;
       }
+      
 
     }
 
